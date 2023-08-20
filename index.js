@@ -1,28 +1,3 @@
-// Multipe step form javascript code
-
-// How You Gonna Solve the the problem 
-// 1) Think about the input output of the component
-// 2) come up with a solution 
-// 3) Try input output with solution
-// 4) improve the solution for, efficiency , readability
-// 5) Try Dry Coding 
-// 6) Build your Logic on Class based solution
-
-// Obejective of the code is to improve the javascript knowlegde and OOP
-
-//Your users should be able to:
-
-//- Complete each step of the sequence
-//- Go back to a previous step to update their selections
-//- See a summary of their selections on the final step and confirm their order
-//- View the optimal layout for the interface depending on their device's screen size
-//- See hover and focus states for all interactive elements on the page
-//- Receive form validation messages if:
-//  - A field has been missed
-//  - The email address is not formatted correctly
-//  - A step is submitted, but no selection has been made
-
-
 // Main pages for appearing on clicking the next bubtton
 const mainPersonalForm = document.querySelector('.main-personal-info');
 const mainSelectPlan = document.querySelector('.main-select-plan');
