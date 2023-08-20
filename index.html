@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="main-container">
+
+      <section class="sidebar-personal-info">
+        <img class="sidebar-img" src="assets\images\bg-sidebar-desktop.svg" alt="">
+        <!-- Sidebar start -->
+        <div class="sidebar-text">
+          <div class="step-box1 flex">
+            <p class="number one">1</p>
+            <div class="step-info">
+              <p>Step 1</p>
+              <p>Your info</p>
+            </div>
+          </div>
+        
+          <div class="step-box2 flex">
+            <p class="number two">2</p>
+            <div class="step-select-plan">
+              <p>Step 2</p>
+              <p>Select plan</p>
+            </div>
+          </div>
+  
+          <div class="step-box3 flex">
+            <p class="number three">3</p>
+            <div class="step-addons">
+              <p>Step 3</p>
+              <p>Add-ons</p>
+            </div>
+          </div>
+  
+          <div class="step-box4 flex">
+            <p class="number four">4</p>
+            <div class="step-summary">
+              <p>Step 4</p>
+              <p>SUMMARY</p>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar end -->
+      </section>
+
+      <section class="main-personal-info">
+
+        <div class="form-step1" id="form-step1">
+          <!-- Step 1 start -->
+          <h1 class="headText">Personal info</h1>
+          <p class="textinfo">Please provide your name, email address, and phone number.</p>
+          <div class="formInfo">
+            <form class="form-input">
+              <label class="label">Name</label>
+              <input class="name-input" type="text" placeholder="e.g. Stephen King">
+              <span class="error message">This field is required</span>
+
+              <label class="label">Email Address</label>
+              <input class="email-input" type="email" name="" id="" placeholder="e.g. stephenking@lorem.com ">
+              <span class="error2 message">This field is required</span>
+  
+              <label class="label">Phone Number</label>
+              <input class="number-input" type="text" placeholder="e.g. +1 234 567 890" maxlength="10">
+              <span class="error3 message">This field is required</span>
+            </form>
+          </div>
+          <button class="Next-button"><a href="#plan" target="_self">Next Step</a></button>
+        </div>
+
+        <!-- Step 1 end -->
+      </section>
+
+      <section class="main-select-plan" id="plan">
+        <!-- Step 2 start -->
+        <div class="form-step2">
+          <h1 class="headText">Select your plan</h1>
+          <p class="textinfo">You have the option of monthly or yearly billing.</p>
+
+          <div class="options">
+            <div class="option1">
+              <img src="assets\images\icon-arcade.svg" alt="">
+              <div class="nameprice">
+                <p class="arcade-text">Arcade <br> <span class="plan-price">$9/mo</span></p>
+                <p class="months-free">2 months free</p>
+              </div>
+            </div>
+            
+            <div class="option2">
+              <img src="assets\images\icon-advanced.svg" alt="">
+              <div class="nameprice">
+                <p class="advance-text">Advanced <br> <span class="plan-price">$12/mo</span></p>
+                <p class="months-free">2 months free</p>
+              </div>
+            </div>
+
+            <div class="option3">
+              <img src="assets\images\icon-pro.svg" alt="">
+              <div class="nameprice">
+                <p class="pro-text">Pro <br> <span class="plan-price">$15/mo</span> </p>
+                <p class="months-free">2 months free</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="toggleMonthOrYear">
+            <p class="monthly">Monthly</p>
+              <label class="switch">
+                <input type="checkbox">
+                <span data-slider="0" class="slider round"></span>
+              </label>
+            <p class="yearly">Yearly </p>
+          </div>
+
+          <button class="Previous-button"><a href="#form-step1">Go Back</a></button>
+          <button class="Next-button"><a href="#addons" target="_self">Next Step</a></button>
+        </div>
+        <!-- Step 2 end -->
+      </section>
+
+      <section class="main-add-ons" id="addons">
+        <!-- Step 3 start -->
+        <div class="form-step3">
+          <h1 class="headText">Pick add-ons</h1>
+          <p class="textinfo">Add-ons help enhance your gaming experience.</p>
+
+          <div class="select">
+            <form action="#" class="form-select">
+              <div class="add-option1">
+                <input type="checkbox" name="service" id="option1">
+                <label class="add-on-name">Online service </label>
+                <p class="text-to-label">Access to multiplayer games</p>
+                <p class="addon-price">+$1/mo</p>
+              </div>
+              
+              <div class="add-option2">
+                <input type="checkbox" name="storage" id="option2">
+                <label class="add-on-name">Larger storage</label>
+                <p class="text-to-label">Extra 1TB of cloud save</p>
+                <p class="addon-price">+$2/mo</p>
+              </div>
+              
+              <div class="add-option3">
+                <input type="checkbox" name="" id="option3">
+                <label class="add-on-name">Customizable Profile</label>
+                <p class="text-to-label">Custom theme on your profile</p>
+                <p id="plan" class="addon-price">+$1/mo</p>
+              </div> 
+              
+            </form>
+          </div>
+
+          <button class="Previous-button"><a href="#plan">Go Back</a></button>
+          <button class="Next-button"><a href="#finishup" target="_self">Next Step</a></button>
+        </div>
+        <!-- Step 3 end -->
+      </section>
+
+      <section class="main-finish-up" id="finishup">
+        <!-- Step 4 start -->
+        <div class="form-step4">
+          <h1 class="headText">Finishing up</h1>
+          <p class="textinfo">Double-check everything looks OK before confirming.</p>
+          <!-- Dynamically add subscription and add-on selections here -->
+
+          <div class="dynamic-content">
+            <div class="subscribe-plan">
+              <div class="groupPlan">
+                <p class="subs-plan"></p>
+                <p class="duration-of-plan"></p>
+                <button class="change-selection"><a href="#">change</a></button>
+              </div>
+              
+              <p class="subs-price">$9/mo</p>
+            </div>
+
+            <div class="add-on-selections">
+              <div class="selection1">
+                <p class="addon-select"></p>
+                <p class="add-select-price"></p>
+              </div>
+              <div class="selection2">
+                <p class="add-on-selection"></p>
+                <p class="add-on-selection2"></p>
+              </div>
+              <div class="selection3">
+                <p class="add-on-customize"></p>
+                <p class="add-on-custPrice"></p>
+              </div>
+            </div>
+          </div>
+          <!--Dynamically  generated content ends here-->
+          <p class="total-amount">Total (per month/year) <span class="amount"></span></p>
+
+          <button class="Previous-button"><a href="#addons">Go Back</a></button>
+          <button class="Next-button"><a href="#thankyou" target="_parent">Confirm</a></button>
+        </div>
+        <!-- Step 4 end -->
+      </section>
+
+      <section class="main-thank-you" id="thankyou">
+        <!-- Step 5 start -->
+        <img src="assets\images\icon-thank-you.svg" alt="">
+        <h1 class="headText">Thank you!</h1>
+        <p class="text-end">Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free
+          to email us at support@loremgaming.com.</p>
+        <!-- Step 5 end -->
+      </section>
+
+    </section>
+
+
+
+    <!--<div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Ankit Shrungare</a>.
+    </div>-->
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,667 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Magnolia);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*************** color ***************/ 
+:root {
+/***Primary*****/
+--Marineblue: hsl(213, 96%, 18%);
+--Purplishblue: hsl(243, 100%, 62%);
+--Pastelblue: hsl(228, 100%, 84%);
+--Lightblue: hsl(206, 94%, 87%);
+--Strawberryred: hsl(354, 84%, 57%);
+
+/*******Neutral*********/
+
+--Coolgray: hsl(231, 11%, 63%);
+--Lightgray: hsl(229, 24%, 87%);
+--Magnolia: hsl(217, 100%, 97%);
+--Alabaster: hsl(231, 100%, 99%);
+--White: hsl(0, 0%, 100%);
+
+}
+
+/****************** CSS Box model **********/
+
+.main-container{
+    height: 35em;
+    width: 60em;
+    margin: 55px auto 55px auto;
+    background-color: var(--White);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+}
+
+/********Sidebar ************/
+.sidebar-personal-info{
+    width: 18em;
+    height: 35em;
+    display: grid;
+}
+
+.step-box1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+/**************** Main form ***********/
+.main-personal-info{
+    width: 42em;
+    display: flex;
+}
+.form-step1{
+    display: flex;
+    flex-direction: column;
+    
+    width: 80%;
+    height: 30em;
+    margin: 35px auto;
+    margin-left: 106px;
+}
+
+.formInfo{
+    display: flex;
+}
+.form-input {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 5;
+}
+
+.form-input input[type=text], 
+.form-input input[type=email]{
+    height: 37px;
+    width: 436px;
+    margin-top: -24px;
+    padding-left: 13px;
+    border-radius: 8px;
+    border: 1px solid var(--Lightgray);
+}
+
+.form-input input[placeholder]{
+    font-family: 'Ubuntu';
+    font-size: 1em;
+}
+
+.Next-button {
+    width: 110px;
+    height: 40px;
+    position: relative;
+    top: 70px;
+    left: 342px;
+    background-color: var(--Marineblue);
+    border-radius: 10px;
+}
+
+.main-select-plan {
+    display: flex;
+    display: none;
+    width: 41em;
+}
+.form-step2{
+    margin-left: 0px;
+    margin-top: 25px;
+    width: 100%;
+}
+.options{
+    display: flex;
+    margin-left: 170px;
+    justify-content: space-evenly;
+    position: relative;
+    right: 100px;
+    top: 25px;
+    height: 10em;
+}
+
+.option1, .option2, .option3 {
+    display: flex;
+    height: 9em;
+    width: 8em;
+    border: 1px solid var(--Lightgray);
+    border-radius: 6px;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.toggleMonthOrYear{
+    width: 27.5em;
+    height: 3.5em;
+    position: relative;
+    top: 58px;
+    left: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Alabaster);
+    color: var(--Coolgray);
+}
+
+.form-step2 .Next-button {
+    top: 135px;
+    left: 350px;
+}
+.form-step2 .Previous-button{
+    position: relative;
+    top: 135px;
+    left: 90px;
+    background-color: transparent;
+    border: none;
+}
+
+.arc-adv-pro{
+    height: 10em;
+}
+
+
+.main-add-ons{
+   display: none;
+}
+
+.form-step3{
+    position: relative;
+    top: 30px;
+    right: 100px;
+    height: 34.9em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-step3 .form-select{
+    height: 20em;
+    border: 1px solid var();
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.form-select .add-option1, .add-option2, .add-option3{
+    border: 1px solid var(--Lightblue);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 4.5em;
+    border-radius: 6px;
+}
+.add-option1 input[type=checkbox],  
+.add-option2 input[type=checkbox],
+.add-option3 input[type=checkbox]
+{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+.add-option3 input[type=checkbox]
+{
+    position: relative;
+    left: 10px;
+}
+.add-option2 input[type=checkbox]
+{
+    position: relative;
+    right: 6px;
+}
+
+.form-step3 .Next-button {
+    position: relative;
+    top: -48px;
+    left: 370px;
+}
+.form-step3 .Previous-button{
+    position: relative;
+    top: -10px;
+    right: 212px;
+    background-color: transparent;
+    border: none;
+}
+
+
+.main-thank-you{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 30em;
+    position: relative;
+    right: 57px;
+}
+/********************* Box model Ends ***************/
+
+
+
+/*******************Css Text style *********/
+.sidebar-text{
+    position: relative;
+    bottom: 500px;
+    left: 60px;
+    line-height: .2;
+    color: var(--White);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.step-info :first-child, 
+.step-select-plan :first-child, 
+.step-addons :first-child, 
+.step-summary :first-child{
+    font-size: 13px;
+    color: var(--Lightgray);
+}
+.number{
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--White);
+    border-radius: 20px;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Coolgray);
+}
+.one{
+    background-color: var(--Alabaster);
+}
+
+.headText{
+    font-size: 2.2em;
+    color: var(--Marineblue);
+}
+.textinfo {
+    margin-top: -23px;
+    color: var(--Coolgray);
+}
+
+.label {
+    color: var(--Marineblue);
+    text-transform: uppercase;
+    margin-top: -11px;
+    line-height: 5;
+}
+.form-step2 .headText, .form-step2 .textinfo{
+    margin-left: 92px;
+}
+.options .option1 p, .option2 p , .option3 p{
+    line-height: 1.3;
+    padding-left: 17px;
+}
+
+.form-step2 .Previous-button a {
+    color: var(--Coolgray);
+    font-family: "Ubuntu";
+    font-weight: 500;
+}
+.form-step3 .textinfo{
+    margin-left: 0px;
+    margin-bottom: 35px;
+}
+
+.add-option1 .text-to-label {
+    position: relative;
+    top: 20px;
+    right: 126px;
+    font-size: 13px;
+}
+.add-option1 .text-to-label {
+    position: relative;
+    top: 10px;
+    right: 131px;
+    font-size: 13px;
+    color: var(--Coolgray);
+}
+.add-option3 label {
+    position: relative;
+    bottom: 10px;
+    left: 22px;
+    color: var(--Marineblue);
+    font-weight: 700;
+}
+.add-option1 label {
+    position: relative;
+    bottom: 10px;
+    color: var(--Marineblue);
+    font-weight: 700;
+}
+.add-option2 label {
+    position: relative;
+    bottom: 10px;
+    right: 9px;
+    color: var(--Marineblue);
+    font-weight: 700;
+}
+
+.add-option3 .text-to-label {
+    position: relative;
+    top: 12px;
+    right: 149px;
+    color: var(--Coolgray);
+    font-size: 13px;
+}
+.add-option2 .text-to-label {
+    position: relative;
+    top: 12px;
+    right: 151px;
+    color: var(--Coolgray);
+    font-size: 13px;
+}
+#plan{
+    position: relative;
+    right: 10px;
+
+}
+
+.text-end {
+    width: 28em;
+    text-align: center;
+    color: var(--Coolgray);
+    font-weight: 500;
+    margin-top: -30px;
+}
+.main-thank-you .headText{
+    margin-top: 10px;
+}
+.monthly{
+    color: var(--Marineblue);
+    font-family: "Ubuntu";
+    font-weight: 500;
+}
+
+.plan-price {
+    color: var(--Coolgray);
+    font-weight: 300;
+}
+.arcade-text,
+.advance-text,
+.pro-text{
+    color: var(--Marineblue);
+    font-family: "Ubuntu";
+    font-weight: 700;
+}
+.arc-adv-pro-text{
+    position: relative;
+    top: 16px;
+}
+.months-free{
+    font-size: 14px;
+    position: relative;
+    display: none;
+    color: var(--Marineblue);
+}
+.month-free-on-toggle{
+    display: block;
+}   
+
+.error{
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    bottom: 563px;
+    left: 724px;
+    line-height: 1;
+    display: none;
+}
+.error2{
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    bottom: 478px;
+    left: 724px;
+    line-height: 1;
+    display: none;
+}
+.error3{
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    bottom: 391px;
+    left: 726px;
+    line-height: 1;
+    display: none;
+}
+
+/****************** Text style end *********/
+
+/*****************Css Images style  *********/
+
+.sidebar-img{
+    width: 16em;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.option1 img, .option2 img , .option3 img {
+    width: 35px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+/***************** Images style  End ********/
+
+
+/***************** Links style  *************/
+
+.Next-button a {
+    color: var(--White);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.form-step3 .Previous-button a{
+    color: var(--Coolgray);
+}
+/***************** links style end **********/
+
+/***************** pseudo style css ********/
+.add-option1:hover, 
+.add-option2:hover,
+.add-option3:hover{
+    border: 1px solid blue;
+    cursor: pointer;
+}
+/***************** pseudo style  end ********/
+
+
+/*********************slider toggle *************************/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: var(--Marineblue);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--Marineblue);
+}
+input:focus + .slider{
+    box-shadow: 0 0 1px var(--Marineblue);
+}
+input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /*************************Dynamically created summary page**********************/
+
+  .main-finish-up {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 5em;
+  }
+  .form-step4{
+    height: 30em;
+    width: 30em;
+    
+  }
+
+  .dynamic-content{
+    display: flex;
+    flex-direction: column;
+    height: 13em;
+    background-color: var(--Magnolia);
+    position: relative;
+    top: 60px;
+  }
+  .subscribe-plan{
+    display: flex;
+    gap: /*15em;*/ 7em;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Lightgray);
+    width: 26.4em;
+    height: 4.3em;
+    margin-left: 29px;
+    margin-top: 10px;
+  }
+  .add-on-selections{
+    display: flex;
+    flex-direction: column;
+    line-height: .3;
+    margin-top: 27px;
+  }
+  .selection1{
+    display: flex;
+    flex-direction: row;
+    gap: 12.8em;
+    justify-content: space-around;
+    color: var(--Coolgray);
+  }
+  .selection2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 12.8em;
+    color: var(--Coolgray);
+  }
+  .selection3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 12em;
+    color: var(--Coolgray);
+  }
+
+  .total-amount{
+    position: relative;
+    top: 68px;
+    left: 28px;
+    color: var(--Coolgray);
+  }
+  .amount {
+    position: absolute;
+    right: 57px;
+    font-size: 1.4em;
+    color: var(--Purplishblue);
+  }
+  .form-step4 .Next-button {
+        width: 110px;
+        height: 40px;
+        position: relative;
+        top: 114px;
+        left: 301px;
+        background-color: var(--Purplishblue);
+        border-radius: 10px;
+  }
+  .form-step4 .Previous-button {
+    position: relative;
+    top: 114px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .groupPlan{
+    display: flex;
+    align-items: baseline;
+    gap: .3em;
+  }
+
+  .change-selection{
+    border: none;
+    position: relative;
+    top: 20px;
+    right: 62px;/*138px*/
+    background-color: transparent;
+  }
+  .form-step4 .headText{
+    position: relative;
+    top: 33px;
+  }
+  .form-step4 .textinfo{
+    position: relative;
+    top: 28px;
+  }
+
+  .add-on-selection2,
+  .add-select-price,
+  .subscribe-plan p,
+  .add-on-custPrice
+  {
+    color: var(--Marineblue);
+  }
+  .subscribe-plan p
+  {
+    color: var(--Marineblue);
+    font-family: "Ubuntu";
+  }
+  .change-selection a{
+    color: var(--Coolgray);
+  }
